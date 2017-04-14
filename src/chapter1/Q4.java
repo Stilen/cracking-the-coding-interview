@@ -11,6 +11,7 @@ public class Q4 {
 	 * Time: O(n) Space: O(n)
 	 */
 	public static boolean isPermutationOfPalindrome (String s) {
+		s = s.toLowerCase();
 		HashSet<Character> chars = new HashSet<Character>();
 		
 		for(int i=0; i < s.length(); i++){

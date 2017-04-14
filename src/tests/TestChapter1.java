@@ -58,4 +58,14 @@ public class TestChapter1 {
 		assertEquals("%20%20", Q3.replaceSpaces("      "));
 		assertEquals("Mr%20%20Smith", Q3.replaceSpaces("Mr  Smith    "));
 	}
+	
+	@Test
+	public void testQ4() {
+		assertTrue(Q4.isPermutationOfPalindrome("oov"));
+		assertTrue(Q4.isPermutationOfPalindrome("TactCoa"));
+		assertTrue(Q4.isPermutationOfPalindrome("Portugaltugalrop"));
+		assertFalse(Q4.isPermutationOfPalindrome("cracking"));
+		assertFalse(Q4.isPermutationOfPalindrome("coding"));
+		assertFalse(Q4.isPermutationOfPalindrome("interview"));
+	}
 }
